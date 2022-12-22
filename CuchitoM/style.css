@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color:black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;    
+    font-family: 'Offside', cursive;
+    
+}
+
+header {
+     width: 100%;
+     height: 100vh;
+     align-items: center;
+     background-image: url(./img/moon.jpg);
+     background-size: cover;
+     background-position: center;
+}
+
+.cabezanav { 
+   display: flex;
+   width: 100%; 
+   justify-content: space-between; 
+   align-items: center; 
+   text-align: center;
+   padding: 4px;
+   transition: all 0.5s ease;
+}
+
+.logo {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    font-family: 'Megrim', cursive;
+    font-weight: 100;
+}
+
+.logo img {    
+    float: left;
+    height: 100px;  
+    margin-right: 2vh;
+    margin-left: 0;
+}
+
+.menunav {
+    display: flex;
+}    
+
+.menunav li {
+    list-style: none;
+    margin: 10px;
+}
+
+.menunav li a {
+    color: rgb(250, 214, 169);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.menunav li a:hover {
+    padding: 5px 10px;
+    background: orange;
+    color: white;
+    border-radius: 15px;
+}
+
+.redes {
+    position: fixed;
+    left: 0;
+    top: 5%;
+    z-index: 1000;
+    color: beige;
+    height: 300px;
+    width: 300px;
+    margin: 100px 0; 
+}
+
+.redes ul {
+    margin-left: 0;
+    width: 70%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+    position: fixed;
+}
+
+.redes li {
+    position: relative;
+    transform: translateX(-90px);
+    background: rgba(0,0,0,0,8);
+    list-style: none;
+    padding: 10px 0;
+    margin: 10px 0;
+    transition: .5s;
+    width: 150px;
+    border-radius: 0 200px 200px 0;
+}
+
+.redes li:hover:nth-child(1) {
+    background-color: rgb(202, 6, 6);
+}
+.redes li:hover:nth-child(2) {
+    background-color: rgb(8 , 81, 255);
+}
+.redes li:hover:nth-child(3) {
+    background-color:  rgb(255, 8, 201);
+}
+.redes li:hover:nth-child(4) {
+    background-color: rgb(8, 156, 255);
+}
+
+li:hover {
+    transform: translateX(0);
+}
+
+a {
+    font-weight: bold;
+    color: beige;
+    font-family: 'Offside', cursive;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+i {
+    margin-left: 15px;
+    padding: 10px 10px;
+    border-radius: 50%;
+    color:beige;
+    background: gray;
+}
+
+.icon {
+    font-size: 20px;
+}
+
+.gm {
+    position: relative;
+    left: 30px;
+}
+.fb {
+    position: relative;
+    left: 30px;
+}
+.in {
+    position: relative;
+    left: 30px;
+}
+.tw {
+    position: relative;
+    left: 30px;
+}
+
+
+.pie-pagina {
+    width: 100%;
+    min-height: 70px; 
+    background-color: black;
+    padding: 40px 0%; 
+    bottom: 0;
+    font-family: 'Offside', cursive;
+    color: beige;
+    position: absolute;
+}
+
+.contenedores {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pie-pagina .contenedores {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}   
+ 
+
+.caja-final {
+    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    text-align: center;
+    color: beige;
+}
+
+@media (max-width:700px) {
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+
